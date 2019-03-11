@@ -16,8 +16,8 @@ h1 {
 }
 
 .all {
-  width: 800px;
-  height: 600px;
+  width: 1000px;
+  /* height: 600px; */
   margin: 0 auto;
   overflow: hidden;
   /* border: 1px solid #000; */
@@ -27,8 +27,41 @@ h1 {
 .li {
   position: relative;
   overflow: hidden;
+  /* width: 400px; */
+  /* float: left; */
+  margin-top: 180px;
+}
+
+.left{
+  display: inline;
+}
+
+.right {
   width: 400px;
-  float: left;
+  height: 300px;
+  display: inline-block;
+  margin-left: 100px;
+  background: rgba(255,255,255,.5);
+  border-radius: 10px;
+}
+
+.right_content {
+  text-align: center;
+}
+
+.right h2 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.right h2:hover {
+  color: orange
+}
+
+.right p {
+  width: 250px;
+  text-align: center;
+  display: inline-block;
 }
 
 .item {
