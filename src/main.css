@@ -257,3 +257,12 @@ fa-angle-down::before {
     margin-top: 120px;
   }
 }
+
+@media (max-width: 768px) {
+  .shadow {
+    margin-top: 20px;
+  }
+  .col-xs-3 {
+    margin-top: 20px;
+  }
+}
