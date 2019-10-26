@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>红籽科技</title>
+  <style>
+    html,body,main {
+      margin: 0;
+      padding: 0;
+    }
+    html,body {
+      width: 100%;
+      height: 100%;
+    }
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #logo {
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #logo h1 {
+      color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+    #logo img {
+      width: 22%;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 5px 40px;
+      background-color:#333;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      transition: all .25s;
+    }
+    nav:hover {
+      border-bottom: 1px solid #ff6f61;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+    .logo img {
+      width: 40px;
+    }
+    .logo h2 {
+      color: #fff;
+      margin-left: 20px;
+      transition: .25s;
+    }
+    .logo h2:hover {
+      color: #ff6f61;
+    }
+    .navi {
+      color: #fff;
+      margin-left: 300px;
+    }
+    .navi-item {
+      margin-right: 40px;
+      font-size: 20px;
+      user-select: none;
+      cursor: pointer;
+      transition: all .25s;
+      padding: 5px 0;
+    }
+    .navi-item:hover {
+      color: #ff6f61;
+      border-bottom: 1px solid #ff6f61;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./logo.png" alt="">
+      <h2>红籽科技有限公司</h2>
+    </div>
+
+    <div class="navi">
+      <span class="navi-item">首页</span>
+      <span class="navi-item">产品中心</span>
+      <span class="navi-item">客户案例</span>
+      <span class="navi-item">新闻中心</span>
+      <span class="navi-item">关于我们</span>
+      <span class="navi-item">加入我们</span>
+    </div>
+  </nav>
+
+  <main>
+    <video src="http://v1.cecdn.yun300.cn/site_1807160336/video0011534407234467.mp4" autoplay="autoplay" muted="true" loop="loop"></video>
+    <div id="logo">
+      <img src="./logo-white.png" alt="">
+      <h1>红籽科技</h1>
+    </div>
+  </main>
+  
+</body>
+</html>
