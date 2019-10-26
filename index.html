@@ -1,309 +1,126 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)https://v3.bootcss.com/examples/carousel/ -->
-<html lang="zh-CN">
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137387174-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>红籽科技</title>
+  <style>
+    html,body,main {
+      margin: 0;
+      padding: 0;
     }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-137387174-1');
-  </script>
-
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
-
-  <title>Agoreal | Home</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="./src/bootstrap.min.css" rel="stylesheet">
-  <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="./src/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <script src="./src/ie-emulation-modes-warning.js"></script>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  <!-- Custom styles for this template -->
-  <link href="./src/main.css" rel="stylesheet">
+    html,body {
+      width: 100%;
+      height: 100%;
+    }
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #logo {
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #logo h1 {
+      color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+    #logo img {
+      width: 22%;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 5px 40px;
+      background-color:#333;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      transition: all .25s;
+    }
+    nav:hover {
+      border-bottom: 1px solid #ff6f61;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+    .logo img {
+      width: 40px;
+    }
+    .logo h2 {
+      color: #fff;
+      margin-left: 20px;
+      transition: .25s;
+    }
+    .logo h2:hover {
+      color: #ff6f61;
+    }
+    .navi {
+      color: #fff;
+      margin-left: 300px;
+    }
+    .navi-item {
+      margin-right: 40px;
+      font-size: 20px;
+      user-select: none;
+      cursor: pointer;
+      transition: all .25s;
+      padding: 5px 0;
+    }
+    .navi-item:hover {
+      color: #ff6f61;
+      border-bottom: 1px solid #ff6f61;
+    }
+  </style>
 </head>
-<!-- NAVBAR
-================================================== -->
-
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Agoreal's site</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li> -->
-        </ul>
+  <nav>
+    <div class="logo">
+      <img src="./logo.png" alt="">
+      <h2>红籽科技有限公司</h2>
+    </div>
 
-      </div>
-      <!--/.nav-collapse -->
+    <div class="navi">
+      <span class="navi-item">首页</span>
+      <span class="navi-item">产品中心</span>
+      <span class="navi-item">客户案例</span>
+      <span class="navi-item">新闻中心</span>
+      <span class="navi-item">关于我们</span>
+      <span class="navi-item">加入我们</span>
     </div>
   </nav>
 
-  <div class="cover">
-    <h1>你好，我是张功睿！</h1>
-    <h3>A Web Developer</h3>
-    <a href="#about" class="learn-more"><i class="fa fa-angle-down learn-more" aria-hidden="true"></i></a>
-    <div class="mask"></div>
-  </div>
-
-  <!-- Marketing messaging and featurettes
-    ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <h1 id="about">About</h1>
-      <div class="col-lg-4">
-        <img class="img-circle" src="img/faith.png" alt="Generic placeholder image" width="140" height="140">
-        <h2>信条</h2>
-        <p>" Think more, write less. "</p>
-
-      </div><!-- /.col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="img/tou.png" alt="Agoreal" width="140" height="140">
-        <h2>张功睿</h2>
-        <p>前景观设计师，注重视觉感受与人文关怀，想挑战更广阔的天地，带着注重每一位用户体验的心毅然投身 Web 前端。相信技术能带来更好的世界！
-        </p>
-
-      </div><!-- /.col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="img/cqnu.png" alt="Generic placeholder image" width="140" height="140">
-        <h2>CQNU</h2>
-        <p>毕业于重庆师范大学地理与旅游学院2014级风景园林。工科，本科全日制学士学位证。</p>
-
-      </div><!-- /.col-lg-4 -->
-
-    </div><!-- /.row -->
-
-    <div class="row skill">
-
-      <h1>Skill Stack</h1>
-      <div class="col-xs-6 col-md-1">
-        <img src="img/blank.png" height="64" width="64">
-      </div>
-      <div class="col-xs-6 col-md-1">
-        <img src="img/blank.png" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="HTML 5">
-        <img src="img/html.png" alt="html" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="CSS 3">
-        <img src="img/css.png" alt="css" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="JavaScript">
-        <img src="img/JavaScript.png" alt="JavaScript" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="jQuery">
-        <img src="img/Jquery.png" alt="jquery" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="Vue">
-        <img src="img/Vue.png" alt="Vue" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="Webpack">
-        <img src="img/Webpack.png" alt="Webpack" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="PhotoShop">
-        <img src="img/PS.png" alt="PS" height="64" width="64">
-      </div>
-      <div class="col-xs-3 col-md-1" title="Git">
-        <img src="img/git.png" alt="git" height="64" width="64">
-      </div>
-
+  <main>
+    <video src="http://v1.cecdn.yun300.cn/site_1807160336/video0011534407234467.mp4" autoplay="autoplay" muted="true" loop="loop"></video>
+    <div id="logo">
+      <img src="./logo-white.png" alt="">
+      <h1>红籽科技</h1>
     </div>
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-    <h1 id="portfolio">Portfolio</h1>
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">个人博客 <span style="color:rgb(65,184,131)">Vue</span></h2>
-        <p class="gray">Vue.js, Vue-router, Axios, Firebase, Webpack</p>
-        <p class="lead">用 Vue.js 实现的具有增删改查功能的博客应用。第一次用vue构建一个完整应用。（因为 Firebase 是谷歌的，所以可能需要翻墙才能获取数据库内容）</p>
-        <a href="https://agoreal.github.io/personalBlog" target="_blank"><button class="btn btn-default">Learn
-            More</button></a>
-      </div>
-      <div class="col-md-5 shadow">
-        <img class="featurette-image img-responsive center-block" alt="Blog with vue.js" src="img/blog.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 col-md-push-5">
-        <h2 class="featurette-heading">QQ 音乐 <span style="color: mediumpurple"> jQuery</span></h2>
-        <p class="gray">HTML, CSS, JavaScript, jQuery, Ajax</p>
-        <p class="lead">用 html5、jQuery 实现页面布局和播放、暂停、删除、切换歌曲、歌词同步等大部分功能。利用Ajax技术实现音乐数据的获取。熟悉了Ajax技术的使用方法，并理解一些原理。</p>
-        <a href="https://agoreal.github.io/project/QQMusic/index.html" target="_blank"><button
-            class="btn btn-default">Learn More</button></a>
-      </div>
-      <div class="col-md-5 col-md-pull-7 shadow">
-        <img class="featurette-image img-responsive center-block" alt="QQ 音乐" src="img/qqmusic.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">豆瓣电影 <span style="color:gold">JavaScript</span></h2>
-        <p class="gray">HTML, CSS, JavaScript</p>
-        <p class="lead">CSS + 原生JavaScript ，实现页面布局和功能。初学时遇到轮播图的难题，后查资料解决，并自己写了轮播图组件。
-          完整的根据原型撸出一个页面。对 html + css 更加熟悉，也对 JavaScript 操作 DOM 有了更深的理解。</p>
-        <a href="https://agoreal.github.io/project/Douban/index.html" target="_blank"><button
-            class="btn btn-default">Learn More</button></a>
-      </div>
-      <div class="col-md-5 shadow">
-        <img class="featurette-image img-responsive center-block" alt="豆瓣电影" src="img/douban.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 col-md-push-5">
-        <h2 class="featurette-heading">响应式页面 <span style="color:pink"> Bootstrap</span></h2>
-        <p class="gray">HTML, CSS, JavaScript, Bootstrap</p>
-        <p class="lead">用 Bootstrap 库构建的响应式页面。Twitter 的 Bootstrap 真方便！致敬乔布斯！活着就是为了改变世界！</p>
-        <a href="https://codepen.io/agoreal/full/wEjmBg" target="_blank"><button class="btn btn-default">Learn
-            More</button></a>
-      </div>
-      <div class="col-md-5 col-md-pull-7 shadow">
-        <img class="featurette-image img-responsive center-block" alt="致敬乔布斯" src="img/tribute.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">打砖块小游戏 <span style="color:steelblue">Canvas</span></h2>
-        <p class="gray">HTML, CSS, JavaScript, Canvas</p>
-        <p class="lead">利用 canvas 画布和原生 JavaScript 实现。根据爱好写的小游戏，了解并尝试了 canvas 用法，有关卡、生命值、暂停功能。用 JavaScript 可以实现很多好玩的东西！
-        </p>
-        <a href="https://agoreal.github.io/project/Game/index.html" target="_blank"><button
-            class="btn btn-default">Learn More</button></a>
-      </div>
-      <div class="col-md-5 shadow">
-        <img class="featurette-image img-responsive center-block" alt="打砖块小游戏" src="img/game.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 col-md-push-5">
-        <h2 class="featurette-heading">Slider 组件 <span style="color:gold"> JavaScript</span></h2>
-        <p class="gray">HTML, CSS, JavaScript</p>
-        <p class="lead">学完 html + css + JavaScript 后开始照着撸一些网页，在实现轮播图的时候卡了很久，探索一番后，自己用原生 JavaScript 封装了一个轮播图组件。</p>
-        <a href="https://agoreal.github.io/project/Slider/index.html" target="_blank"><button
-            class="btn btn-default">Learn More</button></a>
-      </div>
-      <div class="col-md-5 col-md-pull-7 shadow">
-        <img class="featurette-image img-responsive center-block" alt="Slider 组件" src="img/slider.gif">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-
-    <!-- Footer -->
-    <footer id="contact">
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p class="link">© 2018-2019 Agoreal, Inc.
-        <span>
-          <a href="tencent://message/?Menu=yes&uin=347125176" target="blank"><i class="fa fa-qq fa-lg"
-              aria-hidden="true"></i></a>
-          <a href="https://github.com/agoreal" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-          <a href="mailto:agoreal1995@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-        </span><!-- · <a href="#">Privacy</a> · <a href="#">Terms</a> -->
-        <span class="thanks">封面图来自<a href="https://weibo.com/niehuizheng">@手指断了a</a>.</span>
-      </p>
-
-    </footer>
-  </div><!-- /.container -->
-
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./src/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-  </script>
-  <script src="./src/bootstrap.min.js"></script>
-  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <script src="./src/holder.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="./src/ie10-viewport-bug-workaround.js"></script>
-
-
-  <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none"
-    style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
-    <defs>
-      <style type="text/css"></style>
-    </defs><text x="0" y="25"
-      style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
-  </svg>
+  </main>
+  
 </body>
-
 </html>
