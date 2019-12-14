@@ -385,6 +385,11 @@ ul.navbar-nav {
     margin: 0 auto;
 }
 
+.hero-area-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
 /*=============================
 Hero area
 ==============================*/
@@ -456,7 +461,7 @@ a.boxed-btn {
 a.bordered-btn {
     display: inline-block;
     font-size: 14px;
-    color: #fff;
+    color: #f6f6f6;
     font-weight: 700;
     border: 2px solid #ff6f61;
     padding: 13px 30px;
@@ -1174,7 +1179,7 @@ Featured css
 }
 
 .featured-bg {
-    background-image: url(assets/img/hero-bg.jpg);
+    background-image: url(assets/img/hero-bg-1.jpg);
 }
 
 .featured-box {
@@ -2335,7 +2340,7 @@ a.mobile-show {
     padding: 15px;
     width: 60%;
     background-color: transparent;
-    border-bottom: 1px solid #FFFF00;
+    border-bottom: 1px solid #ff6f61;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -2347,7 +2352,8 @@ a.mobile-show {
 
 .search-bar-tablecell button[type=submit] {
     border: none;
-    background-color: yellow;
+    background-color: #ff6f61;
+    color: #fff;
     padding: 15px 30px;
     cursor: pointer;
     display: inline-block;
@@ -2547,7 +2553,7 @@ a.bordered-btn {
 
 a.bordered-btn:hover {
     background-color: #ff6f61;
-    color: #333;
+    color: #fff;
 }
 
 ul.sub-menu a {
@@ -2631,7 +2637,7 @@ a.service-btn:hover {
 
 .footer-box.subscribe form button:hover {
     background-color: #ff6f61;
-    color: #051922;
+    color: #fff;
 }
 
 .social-icons ul li:hover a {
@@ -2805,7 +2811,7 @@ span.close-btn {
 }
 
 span.close-btn:hover {
-    color: #FFFF00;
+    color: #ff6f61;
 }
 a.mobile-show.search-bar-icon {
     transition: 0.3s;
