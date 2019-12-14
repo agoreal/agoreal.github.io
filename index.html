@@ -1,126 +1,697 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>红籽科技</title>
-  <style>
-    html,body,main {
-      margin: 0;
-      padding: 0;
-    }
-    html,body {
-      width: 100%;
-      height: 100%;
-    }
-    main {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    #logo {
-      user-select: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    #logo h1 {
-      color: #fff;
-      position: relative;
-      z-index: 2;
-    }
-    #logo img {
-      width: 22%;
-    }
-    video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      z-index: -1;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 5px 40px;
-      background-color:#333;
-      z-index: 3;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #333;
-      transition: all .25s;
-    }
-    nav:hover {
-      border-bottom: 1px solid #ff6f61;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      user-select: none;
-    }
-    .logo img {
-      width: 40px;
-    }
-    .logo h2 {
-      color: #fff;
-      margin-left: 20px;
-      transition: .25s;
-    }
-    .logo h2:hover {
-      color: #ff6f61;
-    }
-    .navi {
-      color: #fff;
-      margin-left: 300px;
-    }
-    .navi-item {
-      margin-right: 40px;
-      font-size: 20px;
-      user-select: none;
-      cursor: pointer;
-      transition: all .25s;
-      padding: 5px 0;
-    }
-    .navi-item:hover {
-      color: #ff6f61;
-      border-bottom: 1px solid #ff6f61;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	<title>红籽 - 连接万物，共创未来</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap-4.2.1.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- barfiller -->
+	<link rel="stylesheet" href="assets/css/barfiller.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-      <img src="./logo.png" alt="">
-      <h2>红籽科技有限公司</h2>
-    </div>
 
-    <div class="navi">
-      <span class="navi-item">首页</span>
-      <span class="navi-item">产品中心</span>
-      <span class="navi-item">客户案例</span>
-      <span class="navi-item">新闻中心</span>
-      <span class="navi-item">关于我们</span>
-      <span class="navi-item">加入我们</span>
-    </div>
-  </nav>
+	<!-- preloader -->
+	<div class="preloader-wrap">
+		<div class="preloader-wrap-table">
+			<div class="preloader-wrap-tablecell">
+				<div class="spinner">
+					<div class="rect1"></div>
+					<div class="rect2"></div>
+					<div class="rect3"></div>
+					<div class="rect4"></div>
+					<div class="rect5"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- preloader end -->
 
-  <main>
-    <video src="./honzii.mp4" autoplay="autoplay" muted="true" loop="loop"></video>
-    <div id="logo">
-      <img src="./logo-white.png" alt="">
-      <h1>红籽科技</h1>
-    </div>
-  </main>
-  
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo.png" alt="">
+								<p>红籽科技</p>
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="index.html">首页</a>
+									<!-- <ul class="sub-menu">
+										<li><a href="index.html">Static Home</a></li>
+										<li><a href="homepage-2.html">Slider Home</a></li>
+									</ul> -->
+								</li>
+								<li><a href="#">简介</a>
+									<ul class="sub-menu">
+										<li><a href="#">公司简介</a></li>
+										<li><a href="#">愿景及使命</a></li>
+										<li><a href="#">发展历程</a></li>
+										<li><a href="#">业务架构</a></li>
+										<li><a href="#">管理团队</a></li>
+										<li><a href="#">企业文化</a></li>
+										<li><a href="#">办公地点</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href="#">Pages</a>
+									<ul class="sub-menu">
+										<li><a href="404.html">404 page</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="projects.html">Projects</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="shop.html">Shop</a></li>
+									</ul>
+								</li> -->
+								<li><a href="#">行业方案</a>
+									<ul class="sub-menu">
+										<li><a href="#">智慧社区</a></li>
+										<li><a href="#">智慧工厂</a></li>
+										<li><a href="#">智慧城市</a></li>
+										<li><a href="#">智慧政务</a></li>
+										<li><a href="#">智慧教育</a></li>
+										<li><a href="#">智慧交通</a></li>
+										<li><a href="#">智慧服务</a></li>
+										<li><a href="#">智慧医疗</a></li>
+										<li><a href="#">智慧司法</a></li>
+									</ul>
+								</li>
+								<li><a href="#">加入我们</a>
+									<ul class="sub-menu">
+										<li><a href="#">校园招聘</a></li>
+										<li><a href="#">社会招聘</a></li>
+									</ul>
+								</li>
+								<!-- <li><a href="services.html">Service</a>
+									<ul class="sub-menu">
+										<li><a href="services.html">Service</a></li>
+										<li><a href="single-service.html">Single Service</a></li>
+									</ul>
+								</li> -->
+								<li><a href="#">联系我们</a></li>
+								<!-- <li><a href="shop.html">Shop</a>
+									<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="single-product.html">Single Product</a></li>
+										<li><a href="cart.html">Cart</a></li>
+									</ul>
+								</li> -->
+								<li>
+									<div class="header-icons">
+										<!-- <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a> -->
+										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search area -->
+
+	<!-- hero area -->
+	<div class="hero-area hero-bg wave-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<!-- <p class="subtitle">红籽科技</p> -->
+							<!-- <h1>Construction &amp; Plumber Industry</h1> -->
+							<img class="hero-area-logo" src="./assets/img/logo.png" alt="">
+							<h1>连接万物&nbsp;&nbsp;智创未来</h1>
+							<div class="hero-btns">
+								<!-- <a href="projects.html" class="boxed-btn">Our project</a> -->
+								<a href="#" class="bordered-btn">联系我们</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end hero area -->
+
+	<!-- services -->
+	<div class="section-padding service-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<!-- <h3><span class="yellow-text">我们</span> 是</h3> -->
+						<!-- <span><i class="fab fa-canadian-maple-leaf"></i></span> -->
+						<p>红籽是一家正在飞速成长的科技公司，</p>
+						<p>通过技术便捷用户的生活，助力企业数字化升级。</p>
+						<p>我们的使命是“让每个都能拥有一位像钢铁侠中‘贾维斯’一样的智能个人助手”。</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-service-box">
+						<div class="service-icon-table">
+							<div class="service-icon-tablecell">
+								<i class="fas fa-wrench"></i>
+							</div>
+						</div>
+						<div class="service-text">
+							<h3>智慧工厂</h3>
+							<p>红籽用物联网、数据可视化、云计算等技术向企业赋能，助力企业完成信息化升级。</p>
+							<a href="#" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-service-box">
+						<div class="service-icon-table">
+							<div class="service-icon-tablecell">
+								<i class="fas fa-truck-loading"></i>
+							</div>
+						</div>
+						<div class="service-text">
+							<h3>智慧社区</h3>
+							<p>红籽有一套完整的智慧社区解决方案，进入未来人居，使生活更加智能、便捷。</p>
+							<a href="#" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-service-box">
+						<div class="service-icon-table">
+							<div class="service-icon-tablecell">
+								<i class="fas fa-tint"></i>
+							</div>
+						</div>
+						<div class="service-text">
+							<h3>智慧政务</h3>
+							<p>红籽通过对政务流程进行数字化建模，打通公民与公共机构的沟通壁垒，大幅提高社会运行效率。</p>
+							<a href="single-service.html" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  end services -->
+
+	<!-- featured section -->
+	<div class="featured-section featured-bg">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-lg-3 col-md-6">
+					<div class="featured-box">
+						<h2>Our Features</h2>
+						<p>If you are looking for our features which are different from others, they are given right in from of you.
+						</p>
+					</div>
+				</div> -->
+				<div class="col-lg-4 col-md-6">
+					<div class="featured-box">
+						<!-- <div class="featured-icon">
+							<div class="featured-icon-tablecell">
+								<i class="fas fa-bath"></i>
+							</div>
+						</div> -->
+						<div class="featured-text">
+							<h3>连接大众与生活</h3>
+							<p>让生活更便捷、更多彩。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="featured-box">
+						<!-- <div class="featured-icon">
+							<div class="featured-icon-tablecell">
+								<i class="fas fa-check"></i>
+							</div>
+						</div> -->
+						<div class="featured-text">
+							<h3>连接企业与科技</h3>
+							<p>数字化助手，助力产业升级。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="featured-box">
+						<!-- <div class="featured-icon">
+							<div class="featured-icon-tablecell">
+								<i class="fas fa-chart-line"></i>
+							</div>
+						</div> -->
+						<div class="featured-text">
+							<h3>连接现在与未来</h3>
+							<p>实践面向未来的创新科技。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end featured section -->
+
+	<!-- testimonail-section -->
+	<div class="section-padding testimonail-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>他们 <span class="yellow-text">说</span></h3>
+						<span><i class="fab fa-canadian-maple-leaf"></i></span>
+						<p>看看他们怎么看待未来和评价红籽。</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<div class="testimonial-sliders">
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/wu-jun.jpg" alt="">
+							</div>
+							<i class="fab fa-twitter"></i>
+							<div class="client-meta">
+								<h3>吴军 - 博士 <span>原腾讯副总裁</span></h3>
+								<p class="testimonial-body">
+									" 物联网和人工智能将再造一个英特尔和微软。 "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/Yuval-Noah-Harari.jpg" alt="">
+							</div>
+							<i class="fab fa-twitter"></i>
+							<div class="client-meta">
+								<h3>尤瓦尔·赫拉利 - 博士 <span>耶路撒冷希伯来大学的历史系教授</span></h3>
+								<p class="testimonial-body">
+									" 如果说第一次认知革命是因为智人的DNA起了一点小变化，让人类拥有虚构的能力，创造了宗教、国家、企业等概念，使其成为地球的统治者;那么未来，算法和生物技术将带来人类的第二次认知革命，完成从智人到神人的物种进化。 "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avater-2.jpg" alt="">
+							</div>
+							<i class="fab fa-twitter"></i>
+							<div class="client-meta">
+								<h3>Jena Fena - Freelancer <span>Analist Social media</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et quasi architecto beatae vitae dict
+									eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+									accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end testimonail-section -->
+
+	<!-- advertisement section -->
+	<!-- <div class="advertisement-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="advertisement-bg">
+						<a href="https://www.youtube.com/watch?v=ctvlUvN6wSE" class="video-play-btn popup-youtube"><i
+								class="fas fa-play"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="featured-text">
+						<p class="top-sub">Take Our Gratitude</p>
+						<h2>Residential <span class="yellow-text">Plumb</span></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minus maiores repudiandae nobis,
+							minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus,
+							et labore minima mollitia qui ducimus.</p>
+						<a href="about.html" class="boxed-btn">know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end advertisement section -->
+
+	<!-- cta area -->
+	<div class="cta-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12">
+					<div class="cta-text">
+						<h3>想现在就咨询吗？</h3>
+						<p>联系我们，马上和红籽一起智创未来！</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 text-right">
+					<div class="cta-btn">
+						<a href="#" class="boxed-btn">联系我们</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end cta area -->
+
+	<!-- product section -->
+	<!-- <div class="product-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3><span class="yellow-text">Our</span> Products</h3>
+						<span><i class="fab fa-canadian-maple-leaf"></i></span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+						</div>
+						<h3>Hand Shower</h3>
+						<p class="product-price"><span><del>200$</del></span> 150$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
+						</div>
+						<h3>Hand Shower</h3>
+						<p class="product-price"><span><del>200$</del></span> 150$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
+						</div>
+						<h3>Hand Shower</h3>
+						<p class="product-price"><span><del>200$</del></span> 150$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end product section -->
+
+	<!-- latest news -->
+	<div class="latest-news section-padding">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3><span class="yellow-text">红籽</span> 新闻</h3>
+						<span><i class="fab fa-canadian-maple-leaf"></i></span>
+						<p>想了解科技界与红籽的最近发生了什么？</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="#">
+							<div class="latest-news-bg news-bg-1"></div>
+						</a>
+						<div class="news-text-box">
+							<h3><a href="#">红籽帮助重庆市万植巨丰生态肥业有限公司实现信息化升级</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> 红籽</span>
+								<span class="date"><i class="fas fa-calendar"></i> 2019-11-04</span>
+							</p>
+							<p class="excerpt">现在的企业都在向信息化、智能化升级，不跟上时代潮流的企业只能被无情淘汰。</p>
+							<a href="#" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="#">
+							<div class="latest-news-bg news-bg-2"></div>
+						</a>
+						<div class="news-text-box">
+							<h3><a href="#">If you are good at something never do it free.</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Joker</span>
+								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
+							</p>
+							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem,
+								dolores inventore, beatae nam.</p>
+							<a href="#" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-latest-news">
+						<a href="#">
+							<div class="latest-news-bg news-bg-3"></div>
+						</a>
+						<div class="news-text-box">
+							<h3><a href="#">You should have gone for the head.</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Thanos</span>
+								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
+							</p>
+							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem,
+								dolores inventore, beatae nam.</p>
+							<a href="#" class="service-btn">了解更多 <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="#" class="boxed-btn">更多新闻</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end latest news -->
+
+	<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/1.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/2.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/3.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/4.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">关于我们</h2>
+						<p>重庆红籽科技有限公司是一家正在飞速成长的科技公司，志在通过科技技术的力量建设一个智能化的万物互联的智慧社会。让每个都能拥有一位像钢铁侠中“贾维斯”一样的智能个人助手。</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">联系我们</h2>
+						<ul>
+							<li>重庆市渝中区凯旋路16号1-1幢</li>
+							<li>agoreal@foxmail.com</li>
+							<li>+86 137 5006 1349</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">网站地图</h2>
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="#">简介</a></li>
+							<li><a href="#">行业方案</a></li>
+							<li><a href="#">加入我们</a></li>
+							<!-- <li><a href="news.html">News</a></li> -->
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">订阅</h2>
+						<p>订阅我们的邮件列表，以获得更新到您的电子邮件收件箱。</p>
+						<form action="index.html">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2017 - 2020 重庆红籽科技有限公司 版权所有。</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+
+	<!-- barfiller -->
+	<script src="assets/js/barfiller.js"></script>
+
+	<!-- bootstrap -->
+	<script src="assets/js/bootstrap-4.2.1.min.js"></script>
+
+	<!-- counter up -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.4.min.js"></script>
+
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+	<!-- gmap3 -->
+	<script src="assets/js/gmap3.js"></script>
+
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+
+	<!-- google map api key -->
+	<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyDhS7XxNIj1f3R_86v0YVTBdCTJwIcUReI&region=GB"></script>
+
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

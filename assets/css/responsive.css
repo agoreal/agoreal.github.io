@@ -1,0 +1,770 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	.hero-text h1 {
+	    font-size: 45px;
+	}
+
+	.header-button a.boxed-btn {
+	    padding: 15px 11px;
+	    font-size: 14px;
+	}
+
+	a.video-play-btn {
+		right: 51%;
+	}
+	.hero-area div.hero-form {
+		bottom: -20%;
+	}
+
+	.cart-buttons a:first-child {
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	}
+	.contact-form form p input[type=email] {
+	    margin-left: 8px;
+	}
+	.contact-form-box h4 i {
+	    left: -20%;
+	}
+	.pricing-middle-section ul {
+	    padding: 0 40px;
+	}
+	.comment-template form p input[type=email] {
+	    margin-left: 8px;
+	}
+	ul.main-menu li a {
+	    padding: 15px 13px;
+	}
+	span.close-btn {
+	    right: 0;
+	}
+	ul.sub-menu li a {
+	    padding: 7px 10px;
+	}
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.hero-text h1 {
+	    font-size: 40px;
+	}
+	.featured-bg-man {
+	    display: none;
+	}
+	.cta-btn {
+	    text-align: left;
+	    margin-top: 15px;
+	}
+	.footer-box {
+	    margin-bottom: 40px;
+	}
+	.copyright p {
+	    text-align: center;
+	}
+	.advertisement-bg {
+		height: 400px;
+	}
+	.copyright .social-icons {
+	    text-align: center;
+	}
+	.offer-bg:after {
+		display: none;
+	}
+	.single-team-item {
+	    margin-bottom: 30px;
+	}
+
+	.team-bg {
+	    height: 300px;
+	}
+	.counter-box {
+	    margin-bottom: 30px;
+	}
+	table.cart-table {
+	    margin-bottom: 50px;
+	}
+	.order-details-wrap {
+	    margin-top: 50px;
+	}
+	.contact-form form p input[type=text], 
+	.contact-form form p input[type=tel], 
+	.contact-form form p input[type=email] {
+	    width: 100%;
+	}
+
+	.contact-form form p input[type=email] {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+
+	.hero-area div.hero-form {
+		width: 325px;
+		top: 30%;
+	}
+	.bar-filler-section {
+	    margin-bottom: 50px;
+	}
+	.single-pricing-table {
+	    margin-bottom: 30px;
+	}
+
+	.comment-template form p input[type=text], 
+	.comment-template form p input[type=email] {
+	    width: 100%;
+	}
+
+	.comment-template form p input[type=email] {
+	    margin-top: 15px;
+	    margin-left: 0;
+	}
+	.sidebar-section {
+	    margin-left: 0;
+	    margin-top: 50px;
+	}
+	.single-product-img {
+	    margin-bottom: 30px;
+	}
+	.single-product-img img {
+	    width: 100%;
+	}
+	.single-project-img img {
+	    width: 100%;
+	}
+	.single-service-right {
+	    border-left: none;
+	    padding-left: 0;
+	    margin-top: 50px;
+	}
+	.site-logo a img {
+	    max-width: 150px;
+	}
+	.site-logo {
+	    text-align: center;
+	    position: absolute;
+	    z-index: 999;
+	}
+	.mean-container .mean-bar {
+		z-index: 2;
+	}
+	.responsive-menu-wrap {
+	    display: block;
+	}
+	.header-icons {
+	    text-align: center;
+	}
+	.top-header-area {
+	    padding: 15px 0;
+	}
+
+	.responsive-menu-wrap {
+	    position: absolute;
+	    top: 0;
+	}
+
+	.featured-section {
+	    padding: 0;
+	}
+
+	.responsive-menu-wrap {
+	    left: 50%;
+	    margin-top: 10px;
+	    margin-left: -57.5px;
+	}
+	.service-section {
+	    margin-top: 10%;
+	}
+	.hero-text-tablecell {
+	    padding: 0px 70px;
+	}
+	.hero-form .hero-text h1 {
+	    font-size: 30px;
+	}
+
+	.hero-form .hero-text p.subtitle {
+	    font-size: 13px;
+	}
+
+	.hero-form .hero-btns a.bordered-btn {
+	    margin-left: 0;
+	    margin-top: 20px;
+	}
+
+	.sticky-wrapper.is-sticky .top-header-area {
+	    position: absolute!important;
+	    background-color: transparent;
+	}
+	.featured-box {
+	    padding: 30px;
+	}
+
+	.featured-section {
+	    padding: 100px 0;
+	}
+	nav.main-menu {
+	    display: none;
+	}
+	table.order-details {
+	    width: 100%;
+	}
+	.contact-form-box h4 i {
+	    left: -7%;
+	}
+	.why-choose-us-section > h4 {
+	    margin-bottom: 20px;
+	}
+	.single-product-content h3 {
+	    font-size: 20px;
+	    font-weight: 500;
+	    line-height: 1.6;
+	}
+
+	.single-product-content {
+	    margin-left: 15px;
+	}
+
+	.single-product-content p {
+	    font-size: 14px;
+	}
+	.single-project-description h4 {
+	    font-size: 20px;
+	}
+
+	.single-project-description {
+	    margin-top: 0;
+	}
+	.project-description h4 {
+	    font-size: 25px;
+	}
+	a.mobile-hide.search-bar-icon {
+	    display: none!important;
+	}
+	.mobile-show {
+		display: block!important;
+	}
+	a.mobile-show.search-bar-icon {
+	    position: absolute;
+	    right: 60px;
+	    top: 22px;
+	    z-index: 999;
+	    color: #fff;
+	}
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {     
+	.site-logo img {
+	    max-width: 150px;
+	}
+
+	.responsive-menu-wrap {
+	    top: -35px;
+	}
+
+	ul.slicknav_nav {
+	    position: absolute;
+	    left: -160px;
+	}
+	span.close-btn {
+		right: 35px;
+	}
+	.header-icons {
+	    text-align: center;
+	}
+	.hero-text h1 {
+	    font-size: 23px;
+	}
+
+	.hero-text p.subtitle {
+	    font-size: 13px;
+	}
+	.section-title p {
+	    max-width: 400px;
+	    font-size: 14px;
+	}
+
+	.section-title h3 {
+	    font-size: 25px;
+	}
+
+	.featured-bg-man {
+	    display: none;
+	}
+	p.testimonial-body {
+	    font-size: 15px;
+	}
+	.responsive-menu {
+	    left: auto;
+	    right: 0;
+	}
+
+	.featured-section {
+	    padding: 0;
+	}
+
+	a.video-play-btn {
+	    right: auto;
+	    left: 50%;
+	    margin-left: -45px;
+	}
+
+	.cta-text {
+	    text-align: center;
+	}
+	.cta-text h3 {
+	    font-size: 20px;
+	}
+
+	.cta-text p {
+	    font-size: 15px;
+	    line-height: 1.8;
+	}
+
+	.cta-btn {
+	    text-align: center;
+	    margin-top: 15px;
+	}
+
+	.footer-box {
+	    margin-bottom: 50px;
+	}
+
+	.copyright p {
+	    text-align: center;
+	}
+
+	.social-icons {
+	    text-align: center;
+	}
+
+	.footer-area {
+		padding: 80px 0;
+	}
+
+	.hero-text {
+	    text-align: center;
+	}
+
+	.responsive-menu-wrap {
+	    position: relative;
+	}
+
+	.breadcrumb-text h1 {
+	    font-size: 30px;
+	}
+
+	.offer-bg:after {
+	    display: none;
+	}
+	
+	.text-block {
+	    margin-bottom: 50px;
+	}
+
+	.single-team-item {
+	    margin-bottom: 50px;
+	}
+
+	.cta-text-theme-2 h3 {
+	    font-size: 20px;
+	    font-weight: 700;
+	    line-height: 1.8;
+	}
+
+	.counter-box {
+	    margin-bottom: 50px;
+	}
+	
+	.total-section {
+	    margin-top: 30px;
+	}
+
+	.order-details-wrap {
+	    margin-top: 50px;
+	}
+
+	.contact-form form p input[type=text], 
+	.contact-form form p input[type=tel], 
+	.contact-form form p input[type=email] {
+	    width: 100%;
+	}
+
+	.contact-form form p input[type=email] {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+
+	.find-location p {
+	    font-size: 20px;
+	}
+
+	.why-choose-us-section {
+	    margin-top: 50px;
+	}
+
+	.single-pricing-table {
+	    margin-bottom: 30px;
+	}
+
+	.comment-template form p input[type=email] {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+
+	.comment-template form p input[type=text], 
+	.comment-template form p input[type=email] {
+	    width: 100%;
+	}
+
+	.sidebar-section {
+	    margin-left: 0;
+	    margin-top: 50px;
+	}
+
+	.single-product-content {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+
+	.single-product-content h3 {
+	    font-size: 20px;
+	    line-height: 1.5;
+	}
+
+	.single-service-right {
+	    padding-left: 0;
+	    border-left: none;
+	    margin-top: 30px;
+	}
+
+	.product-image {
+	    padding: 60px;
+	    padding-bottom: 0;
+	}
+
+	.header-icons {
+	    text-align: right;
+	    margin-top: 15px;
+	}
+
+	.section-padding {
+		padding: 100px 0;
+	}
+
+	.offer-bg {
+	    margin: 100px 0;
+	}
+
+	.margin-top-150p {
+	    margin-top: 650px;
+	}
+
+	.display-hidden {
+	    display: none;
+	}
+	.mg-bottom-150 {
+		margin-bottom: 100px;
+	}
+
+	.mg-top-150 {
+		margin-top: 100px;
+	}
+	.hero-area div.hero-form {
+		right: 0;
+	}
+
+	.hero-btns a.boxed-btn {
+	    width: 154px;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	.hero-btns {
+	    text-align: center;
+	}
+
+	.hero-btns a.bordered-btn {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+	.hero-area div.hero-form {
+		width: auto;
+	}
+	.section-title p {
+		max-width: 285px;
+	}
+
+	p.testimonial-body {
+		max-width: 285px;
+	}
+	.hero-area div.hero-form {
+		top: 0;
+	}
+	.single-media-wrap h4 {
+	    font-size: 15px;
+	}
+	.advertisement-bg {
+		height: 400px;
+	}
+	.media-icon {
+	    font-size: 20px;
+	    top: 0;
+	}
+
+	.cta-text-theme-2 p a {
+	    display: block;
+	    width: 180px;
+	    margin-left: 0;
+	    margin-top: 20px;
+	}
+
+	.sticky-wrapper.is-sticky .top-header-area {
+	    position: absolute!important;
+	    background-color: transparent;
+	    padding: 25px 0;
+	}
+	.featured-box {
+	    padding: 0 45px;
+	    margin-bottom: 10px;
+	}
+
+	.featured-section {
+	    padding: 100px 0;
+	}
+	.search-bar-tablecell input {
+	    font-size: 20px;
+	}
+	.header-icons {
+		margin-top: 0;
+	}
+	.site-logo {
+    position: absolute;
+	    z-index: 99;
+	}
+
+	.mean-container .mean-bar {
+	    z-index: 2;
+	}
+	.section-title {
+	    margin-bottom: 50px;
+	}
+	.service-text h3 {
+	    font-size: 18px;
+	}
+	.featured-box h2 {
+	    font-size: 23px;
+	}
+
+	.featured-box h3 {
+	    font-size: 18px;
+	}
+
+	.advertisement-section h2 {
+	    font-size: 23px;
+	    line-height: 23px;
+	    margin-bottom: 0;
+	}
+
+	.advertisement-section .featured-text {
+	    padding: 30px;
+	}
+	.cta-text h3 {
+	    line-height: 1.6;
+	}
+
+	.news-text-box h3 {
+	    font-size: 20px;
+	    line-height: 1.5;
+	}
+
+	.copyright p {
+	    padding-bottom: 0;
+	}
+	.single-service-box {
+	    padding: 30px;
+	}
+
+	.service-icon-table {
+	    height: 80px;
+	}
+
+	.service-icon-tablecell i {
+	    font-size: 30px;
+	}
+
+	.main-menu {
+	    display: none;
+	}
+	.error-text h1 {
+	    font-size: 25px;
+	}
+	h2.widget-title {
+	    font-size: 20px;
+	}
+	.cart-table-wrap {
+	    width: 100%;
+	    overflow-x: scroll;
+	}
+	table.cart-table {
+		width: 690px;
+	}
+	.cart-buttons a:first-child {
+	    margin-bottom: 15px;
+	}
+	.form-title h2 {
+	    font-size: 20px;
+	}
+
+	.form-title p {
+	    font-size: 14px;
+	}
+	.contact-form-box h4 i {
+	    left: -20%;
+	}
+	.featured-text p {
+	    font-size: 14px;
+	    line-height: 1.8;
+	}
+	.mission-section h4 {
+	    font-size: 25px;
+	}
+
+	.bar-filler-section p.barfiller-subtitile {
+	    font-size: 15px;
+	    margin-bottom: 10px;
+	}
+	.why-choose-us-section > h4 {
+	    margin-bottom: 20px;
+	    font-size: 25px;
+	}
+
+	.single-media-wrap h4 {
+	    font-size: 15px;
+	    line-height: 1.6;
+	}
+
+	.single-media-wrap {
+	    padding-left: 45px;
+	}
+
+	.single-media-wrap p {
+	    font-size: 14px;
+	}
+
+	.pricing-middle-section ul {
+	    padding: 0;
+	    width: 150px;
+	    margin: 0 auto;
+	}
+	.single-artcile-bg {
+	    height: 300px;
+	}
+
+	.single-article-text h2 {
+	    font-size: 20px;
+	}
+
+	.comments-list-wrap h3, .comment-template h4 {
+	    font-size: 20px;
+	}
+
+	.comment-user-avater img {
+	    max-width: 45px;
+	}
+
+	.comment-text-body {
+	    padding-left: 60px;
+	}
+
+	.comment-text-body h4 a {
+	    display: block;
+	    border: none;
+	    margin-left: 0;
+	    margin-top: 10px;
+	}
+
+	.comment-text-body h4 {
+	    font-size: 18px;
+	}
+
+	.comment-text-body p {
+	    line-height: 1.8;
+	}
+
+	.single-comment-body.child {
+	    margin-left: 0;
+	}
+	.single-product-content h3 {
+	    font-size: 20px;
+	    line-height: 1.5;
+	}
+	.single-product-content p {
+		font-size: 14px;
+	}
+	.single-project-description h4 {
+	    font-size: 18px;
+	    line-height: 1.6;
+	}
+
+	.project-description {
+	    margin-bottom: 50px;
+	}
+
+	.project-description h4 {
+	    font-size: 23px;
+	}
+
+	.project-description p {
+	    font-size: 14px;
+	}
+	.service-menu h4 {
+	    font-size: 25px;
+	}
+
+	.single-service-right h4 {
+	    font-size: 25px;
+	}
+
+	.single-service-right p {
+	    font-size: 14px;
+	}
+	
+	.service-slider-wrap {
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+	}
+	.single-service-bg {
+	    height: 250px;
+	}
+	a.mobile-hide.search-bar-icon {
+	    display: none!important;
+	}
+	.mobile-show {
+		display: block!important;
+	}
+	a.mobile-show.search-bar-icon {
+	    position: absolute;
+	    right: 60px;
+	    top: 22px;
+	    z-index: 999;
+	    color: #fff;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+	.hero-area div.hero-form {
+	    margin: 0 auto;
+	    right: auto;
+	    width: 380px;
+	    left: 50%;
+	    margin-left: -190px;
+	}
+
+	.hero-btns {
+	    text-align: center;
+	}
+
+	.hero-btns a.bordered-btn {
+	    margin-left: 0;
+	    margin-top: 15px;
+	}
+}
